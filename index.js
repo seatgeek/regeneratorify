@@ -21,7 +21,7 @@ module.exports = function(file) {
     }
 
     if (rdata !== data) {
-      rdata = header + data;
+      rdata = header + rdata;
     }
     stream.queue(rdata);
     stream.queue(null);
